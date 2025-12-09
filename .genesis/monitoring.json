@@ -1,0 +1,31 @@
+{
+  "business_id": "workwell",
+  "business_name": "workwell",
+  "deployment_url": "https://bullrushinvestments.github.io/workwell",
+  "created_at": "2025-12-08T13:08:45.744665",
+  "health_checks": {
+    "enabled": true,
+    "interval_minutes": 30,
+    "endpoints": [
+      {
+        "path": "/",
+        "expected_status": 200
+      },
+      {
+        "path": "/pricing.html",
+        "expected_status": 200
+      }
+    ]
+  },
+  "alerts": {
+    "email": "",
+    "slack_webhook": "",
+    "on_downtime": true,
+    "on_slow_response": true,
+    "slow_threshold_ms": 5000
+  },
+  "maintenance_windows": {
+    "enabled": false,
+    "schedule": "0 3 * * 0"
+  }
+}
